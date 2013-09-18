@@ -347,7 +347,7 @@ class Thumbnailer(File):
         basedir = self.thumbnail_basedir % data
         subdir = self.thumbnail_subdir % data
 
-        filename_parts = [filename]
+        filename_parts = [os.path.splitext(filename)[0]]
         if ('%(opts)s' in self.thumbnail_basedir or
                 '%(opts)s' in self.thumbnail_subdir):
             if extension != source_extension:

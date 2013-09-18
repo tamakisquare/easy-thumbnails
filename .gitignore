@@ -6,3 +6,4 @@ docs/_build
 *.egg
 *.pyc
 reports/*
+easy_thumbnails.egg-info/
